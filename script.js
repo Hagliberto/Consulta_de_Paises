@@ -35,13 +35,12 @@ function exibirInformacoesPais() {
                 // Exibir informações essenciais
                 const essentialInfo = document.createElement("div");
                 essentialInfo.innerHTML = `<p><strong>Capital:</strong> ${countryData.capital}</p>
-                        <p><strong>População:</strong> ${countryData.population}</p>
-                        <p><strong>Área:</strong> ${countryData.area} km²</p>
+                        <p><strong>População:</strong> ${countryData.population.toLocaleString()}</p>
+                        <p><strong>Área:</strong> ${countryData.area.toLocaleString()} km²</p>
                         <p><strong>Região:</strong> ${countryData.region}</p>
                         <p><strong>Sub-região:</strong> ${countryData.subregion}</p>
                         <p><strong>Idioma:</strong> ${Object.keys(countryData.languages).join(", ")}</p>
-                        <p><strong>Moeda:</strong> ${Object.keys(countryData.currencies).join(", ")}</p>
-                        <p><strong>Domínio de topo:</strong> ${Object.keys(countryData.tld).join(", ")}</p>`;
+                        <p><strong>Moeda:</strong> ${Object.keys(countryData.currencies).join(", ")}</p>`;
                 countryInfo.appendChild(essentialInfo);
 
                 countryInfoContainer.appendChild(countryInfo);
