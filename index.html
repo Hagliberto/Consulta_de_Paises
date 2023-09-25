@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações do País</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Informações do País</h1>
-    <form id="country-form">
-        <label for="country-input">Digite o nome do país:</label>
-        <input type="text" id="country-input" required>
-        <button type="submit">Pesquisar</button>
-    </form>
-    <div id="country-info-container">
-        <!-- As informações do país serão exibidas aqui -->
-    </div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informações do País</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Informações do País</h1>
+        <form id="country-form">
+            <label for="country-input">Digite o nome do país:</label>
+            <input type="text" id="country-input" />
+            <button type="submit">Pesquisar</button>
+        </form>
+
+        <select id="country-list"></select>
+
+        <div id="country-info-container"></div>
+        <div>
+            <select id="country-list"></select>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
