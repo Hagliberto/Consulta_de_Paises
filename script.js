@@ -52,6 +52,8 @@ function exibirInformacoesPais() {
                 );
             });
     }
+
+    countryInput.value = "";
 }
 
 // Defina o evento de envio do formulário para chamar a função exibirInformacoesPais()
