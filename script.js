@@ -117,3 +117,6 @@ document
     e.preventDefault(); // Evitar o comportamento padrão de envio do formulário
     exibirInformacoesPais();
   });
+
+  // Chame a função preencherListaPaises() para iniciar o preenchimento da lista de países
+preencherListaPaises();
