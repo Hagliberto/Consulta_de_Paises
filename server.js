@@ -6,10 +6,18 @@ const port = 3000;
 const server = http.createServer(function (request, response) {
   const filePath = '.' + request.url;
   const extname = path.extname(filePath);
-  const contentType = extname === '.js' ? 'text/javascript' : 'text/html';
+  let contentType = 'text/html';
+
+  switch (extname) {
+    case '.js':
+      contentType = 'text/javascript';
+      break;
+    case '.css':
+      contentType = 'text/css';
+      break;
+  }
 
   response.setHeader('Content-Type', contentType);
-
   response.statusCode = 200;
 
   if (request.url === '/') {
